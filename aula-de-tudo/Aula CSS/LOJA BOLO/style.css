@@ -1,0 +1,73 @@
+/* nessa parte podemos praticar como o flex só afeta os filhos diretos */
+*{
+    margin: 0;
+    padding: 0
+    }
+nav {
+    border: 1px solid black;
+    display: table-row;
+    flex-direction: column;
+    margin: 18px;
+    width: 200px;
+    height: min-content;
+    border-radius: 8px;
+    background-color:#f2d0e0;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding-left: 8px;
+    
+}
+
+ul {
+    background-color:#f2d0e0;
+    border-radius: 9px;
+    width: 150px;
+    margin: 10px;
+}
+
+li {
+    background-color: #f2d0e0;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: justify;
+    padding: 20px;
+    flex-wrap: 10px;
+}
+
+/* nessa parte podemos praticar as propriedades do flex container */
+main {
+    border: 1px solid mediumvioletred;
+    margin: 0px;
+    background-color:mediumvioletred;
+    width: 97,8vw;
+    height: 3,2vh;
+    padding:4px;
+    display: flex;
+    border-radius: 0px;
+    justify-content: space-between;
+}
+
+div {
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#eeeeee;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    height: 15px;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+ .footer{
+        width: 100%;
+        height: 50px;
+        background-color: mediumvioletred;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
