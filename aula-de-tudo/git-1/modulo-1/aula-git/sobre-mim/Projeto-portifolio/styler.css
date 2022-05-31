@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: rgb(248, 248, 248);
+    font-size: larger;
+    color: aliceblue;
+}
+.barra-logo{
+box-shadow: rebeccapurple;
+}
