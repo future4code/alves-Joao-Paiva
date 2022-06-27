@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ChacterDetailPage from "./pages/CharacterDetailPage/CharacterDetailPage";
+import ChacterListePage from "./pages/CharacterListePage/CharacterListePage";
 
-function App() {
+export default class App extends React.Component {
+  state ={
+    currentScreen: "Lista"
+  }
+  selectPage = () =>{
+    switch (this.state.currentScreen){
+      case "Lista":
+        return <ChacterListePage />
+        case "Detail":
+          return <ChacterDetailPage />
+          default:
+            return <ChacterListePage />
+    }
+  }
+render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {this.selectPage()}
     </div>
   );
 }
 
-export default App;
+}
+
+
