@@ -1,11 +1,12 @@
-import React from './components/menu/Menu.css';
-import Menu from './components/menu/Menu'
-import admin from './pages/admin';
+import React from 'react';
+import { Router } from './Router/Router';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-    <Menu />
+    <div>
+     <Router/>
+    
+ 
     
     </div>
   );
