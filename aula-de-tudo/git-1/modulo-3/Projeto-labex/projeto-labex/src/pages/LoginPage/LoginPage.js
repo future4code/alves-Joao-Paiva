@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import * as C from './styled' 
 
 export const LoginPage = () =>{
     const [email, setEmail] = useState("");

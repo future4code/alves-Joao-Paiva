@@ -1,7 +1,7 @@
 import {HomePage} from '../pages/HomePage/HomePage';
 import AdmimHomePage from '../pages/AdminPage/AdminHomePage';
 import ApplicationFormPage from '../pages/ApplicationPage/ApplicationFormPage';
-import {CreateTripsPage} from '../pages/CreatePage/CreateTripPage';
+import {CreatePage} from '../pages/CreatePage/CreateTripPage';
 import {LisTripsPage} from '../pages/ListPage/ListTripsPage';
 import { LoginPage } from '../pages/LoginPage/LoginPage';
 import TripDetailsPage from  '../pages/TripsPage/TripDetailsPage';
@@ -15,6 +15,7 @@ export const Router = () => {
         <Route path='listtrip' element={ <LisTripsPage /> } />
         <Route path='AdminHomePage' element={ <AdmimHomePage /> } />
         <Route path='LoginPage' element={ <LoginPage /> } />
+        <Route path='Create' element={ <CreatePage /> } />
         </Routes>   
         </BrowserRouter>
     )
