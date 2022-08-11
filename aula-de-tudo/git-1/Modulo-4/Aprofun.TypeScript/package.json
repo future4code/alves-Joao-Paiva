@@ -1,0 +1,16 @@
+{
+  "name": "aula-type-alves",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node exercicio1.js",
+    "go": "node exercicio2.js",
+    "play": "node exercicio3.js",
+    "vai": "node exercicio4.js"
+  },
+  "author": "Joao Pedro Paiva Sousa",
+  
+  "license": "ISC"
+}
