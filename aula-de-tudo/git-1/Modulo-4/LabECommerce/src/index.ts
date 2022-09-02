@@ -5,6 +5,7 @@ import createUser from "./endpoints/createUser";
 import getUsers from "./endpoints/getUsers";
 import createProducts from "./endpoints/createProducts";
 import getProducts from "./endpoints/getProducts";
+import createPurchases from "./endpoints/createPurchases";
 
 
 const app: Express = express()
@@ -15,6 +16,7 @@ app.post("/user", createUser)
 app.get("/users", getUsers)
 app.post("/products", createProducts)
 app.get("/products", getProducts)
+app.post("/purchases", createPurchases)
 
 
 
