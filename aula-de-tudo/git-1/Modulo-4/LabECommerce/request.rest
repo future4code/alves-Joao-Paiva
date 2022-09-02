@@ -1,0 +1,29 @@
+POST  http://localhost:3003/user
+Content-Type: application/json
+
+{
+    "name":"Ronald Wesley",
+    "email":"ministrojogosmagicos@gmail.com",
+    "password":"capitao15"
+
+}
+
+###
+GET http://localhost:3003/users
+
+###
+
+POST  http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name":"MacBook",
+    "price":100.000,
+    "image_url":"https://i.picsum.photos/id/0/5615/3745.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ"
+
+}
+
+###
+
+GET  http://localhost:3003/products
+Content-Type: application/json
