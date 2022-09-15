@@ -1,0 +1,57 @@
+# @name signup
+
+POST http://localhost:3003/signup
+Content-Type:application/json
+
+{
+	"name": "Ricardo",
+	"email": "Ricardo@maneger.com",
+	"password": "151515"
+}
+
+###
+
+# @name login
+
+POST http://localhost:3003/login 
+Content-Type: application/json
+
+{
+"email": "Ricardo@maneger.com" , "password": "151515"
+}
+
+
+### 
+
+# @token = {{login.response.body.token}} 
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRiYjk3M2RmLWI4ZGItNDAxOS05MzZlLTQwMjkyMDgzZDQwNyIsImlhdCI6MTY2MzE5NzEyMywiZXhwIjoxNjYzNjI5MTIzfQ.SgsAk-lIlCrtkSHiuCkQ6MuQZ3pO2VPQyhMvfL6xIHQ 
+GET http://localhost:3003/user/profile 
+Authorization:{{token}}
+
+###
+
+@id = 4bb973df-b8db-4019-936e-40292083d407
+
+GET http://localhost:3003/user/{{id}}
+Authorization:{{token}}
+
+
+###
+
+POST http://localhost:3003/recipe 
+Content-Type: application/json 
+Authorization: {{token}}
+
+{
+"title": "Creme de Galinha" , "description": "Feito com frango, milho, azeitona, creme de leite, e trigo"
+}
+
+### 
+@id = 095a5c3c-4771-460f-91df-7ea6c44ab2b1
+GET http://localhost:3003/recipe/{{id}}
+Content-Type: application/json 
+Authorization:{{token}} 
+
+
+
