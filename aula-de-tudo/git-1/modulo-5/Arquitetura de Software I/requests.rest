@@ -1,0 +1,9 @@
+### 1) Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Joao Pedro Paiva",
+    "email": "frangofrito@gmail.com",
+    "password": "abc123"
+}
